@@ -51,7 +51,7 @@ nav a{
 nav .active a,
 nav a:hover {
     background-color:#39aae1 ;
-    color: #FFFFFF;
+    color: chartreuse;
 }
 
 #banner{
@@ -116,7 +116,7 @@ nav a:hover {
     background-color: #2b4c99;
 }
 .banner_title{
-    font-size: 21px;
+    font-size: 20px;
 }
 .banner_desc{
     font-size: 12px;
@@ -126,7 +126,7 @@ nav a:hover {
 .banner_options a {
     display:inline-block;
     border:1px solid #FFFFFF;
-    padding: 5px;
+    padding: 20px;
     color: white;
     font-size: 12px;
     text-decoration: none;
@@ -163,7 +163,12 @@ nav a:hover {
     color:black;
     font-size: 21px;
     font-weight: bold;
-
+}
+.widget_title_text_news {
+    color:black;
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 220px;
 }
 .widget_title_bar{
     width: 70px;
@@ -377,6 +382,20 @@ footer .widget_title_text {
     display: flex;      
 }
 
+.menuMobile {
+    display: none;
+    height:40px;
+    width: 40px; 
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mm_line {
+    height:4px;
+    background-color: #39aae1;
+}
+
 .twitter_post {
     font-size: 14px;
     margin-left: 15px;
@@ -391,4 +410,71 @@ footer .widget_title_text {
 
 .tweet_indication {
     color: grey;
+}
+
+
+@media (max-width:600px) {
+
+    .banner_headline{
+        padding: 20px;
+    }
+
+    .banner_headline{
+        font-size: 55px;
+    }
+
+    .banner_headline{
+        font-size: 17px;
+    }
+
+    .banner_options{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    #geral section,
+    #geral aside {
+       padding: 20px; 
+    }
+    
+   
+
+    .footer_menu{
+        flex-direction: column;
+    }
+
+    .footer_area{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer_copy{
+        padding: 20px;
+    }
+
+    header .container {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    header {
+        height: auto;
+    }
+    .logo{
+        padding-left:20px ;
+    }
+
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
